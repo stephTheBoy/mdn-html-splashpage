@@ -1,0 +1,39 @@
+Instructions
+
+1) create 400px wide and 120px wide versions of:
+firefox_logo-only_RGB.png
+firefox-addons.jpg
+mozilla-dinosaur-head.png
+
+(filenaming eg firefoxlogo400.png)
+
+optimize all and save inside the main directory.
+
+Along with mdn.svg, these images will be your icons to link to further resources, inside the further-info area.
+You'll also link to the firefox logo in the site header.
+
+2) create a 1200px wide landscape version of red-panda.jpg, and a 600px wide portrait version that shows the panda in more of a close up shot.
+optimize and save inside the main directory.
+
+3) Inside the <header> element, add an <img> element that will embed the small version of the Firefox logo in the header.
+
+4) Just inside the <article> element (right below the opening tag), embed the YouTube video found at
+https://www.youtube.com/watch?v=ojcNcvb1olg
+using the appropriate YouTube tools to generate the code. The video should be 400px wide.
+
+5) Inside the <div> with the class of further-info you will find four <a> elements — each one linking to an interesting Mozilla-related page.
+insert an <img> element inside each one containing appropriate src, alt, srcset and sizes attributes. 
+Make sure you match the correct images with the correct links!
+
+In each case (except one — which one is inherently responsive?) we want the browser to serve the 120px wide version when the viewport width
+is 500px wide or less, or the 400px wide version otherwise.
+
+6) Inside the <div> with the class of red-panda, we want to insert a <picture> element
+that serves the small portrait panda image if the viewport is 600px wide or less, and the large landscape image otherwise.
+
+7) upload your site to a server (using Github pages is an easy and free solution)
+from there you can test whether the srcset/sizes examples are working properly using browser developer tools.
+
+compare your page to the examples provided.
+wide: https://media.prod.mdn.mozit.cloud/attachments/2016/03/24/12946/d77bf2002d18ae35f4048e2670a80bf9/wide-shot.png
+narrow: https://media.prod.mdn.mozit.cloud/attachments/2016/03/24/12944/8dd556883ea3bf38e0c3e4f4b9a54899/narrow-shot.png
